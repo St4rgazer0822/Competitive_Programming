@@ -15,6 +15,25 @@ void vecprint(vector<int> v)
 }
 int a[5] = {1, 2, 3, 4, 5};
 
+/**
+ * @brief A tutorial demonstrating basic vector operations in C++
+ *
+ * Important notes:
+ * - vector.reserve() affects capacity but not size
+ * - vector.resize() affects both size and content
+ * - insert() places element before iterator position
+ * - erase() removes element(s) at/between iterator position(s)
+ * - Sorting requires <algorithm> header
+ *
+ * Time Complexities:
+ * - push_back(): O(1) amortized
+ * - insert(): O(n) where n is distance to end
+ * - erase(): O(n) where n is distance to end
+ * - sort(): O(nlogn)
+ *
+ * @note This code assumes prior declaration of necessary headers
+ *       (#include <vector>, <iostream>, <algorithm>)
+ */
 int main()
 {
     // Construction
